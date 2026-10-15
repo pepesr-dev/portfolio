@@ -1,0 +1,46 @@
+<mxfile host="Electron">
+  <diagram name="Página-1" id="P0Z6FCXEqKKexcevUAE8">
+    <mxGraphModel dx="511" dy="715" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7bs6yJNXzeYH8PXhMTM8-1" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="vercel" vertex="1">
+          <mxGeometry height="80" width="120" x="590" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="7bs6yJNXzeYH8PXhMTM8-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Actor" vertex="1">
+          <mxGeometry height="60" width="30" x="230" y="334.6" as="geometry" />
+        </mxCell>
+        <mxCell id="7bs6yJNXzeYH8PXhMTM8-3" parent="1" style="image;html=1;image=img/lib/clip_art/computers/Laptop_128x128.png" value="" vertex="1">
+          <mxGeometry height="80" width="80" x="290" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="7bs6yJNXzeYH8PXhMTM8-4" parent="1" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.chrome" value="" vertex="1">
+          <mxGeometry height="75.4" width="74.8" x="390" y="334.6" as="geometry" />
+        </mxCell>
+        <mxCell id="7bs6yJNXzeYH8PXhMTM8-6" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="portfolio" vertex="1">
+          <mxGeometry height="145" width="280" x="290" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="7bs6yJNXzeYH8PXhMTM8-7" parent="7bs6yJNXzeYH8PXhMTM8-6" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_registry_image;" value="" vertex="1">
+          <mxGeometry height="48" width="48" x="30" y="48.51" as="geometry" />
+        </mxCell>
+        <mxCell id="7bs6yJNXzeYH8PXhMTM8-9" parent="7bs6yJNXzeYH8PXhMTM8-6" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" value="" vertex="1">
+          <mxGeometry height="60" width="60" x="190" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="7bs6yJNXzeYH8PXhMTM8-11" parent="7bs6yJNXzeYH8PXhMTM8-6" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.no_symbol" value="" vertex="1">
+          <mxGeometry height="35" width="44.8" x="220" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="7bs6yJNXzeYH8PXhMTM8-17" parent="7bs6yJNXzeYH8PXhMTM8-6" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;fillColor=#FF6A00;strokeColor=none;shape=mxgraph.alibaba_cloud.nodejs_performance_platform;" value="" vertex="1">
+          <mxGeometry height="67.71" width="60" x="109" y="38.65" as="geometry" />
+        </mxCell>
+        <mxCell id="7bs6yJNXzeYH8PXhMTM8-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="#tags" vertex="1">
+          <mxGeometry height="60" width="120" x="300" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="7bs6yJNXzeYH8PXhMTM8-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="components" vertex="1">
+          <mxGeometry height="60" width="120" x="300" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="7bs6yJNXzeYH8PXhMTM8-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="img" vertex="1">
+          <mxGeometry height="60" width="120" x="300" y="860" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

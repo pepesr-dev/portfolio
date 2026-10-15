@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/*Regla personalizada que seleciona todas las clases dark*/
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    /*fondo*/
+    --color-bg-light: #FFFFFF;
+    --color-bg-dark: #0D1B2A;
+    /*texto*/
+    --color-text-light: #1D3646;
+    --color-text-dark: #94A3B8;
+    /*acento*/
+    --color-accent-green: #10B981;
+    --color-accent-blue: #6088F2;
+}
+
+body {
+    /*Estado por defecto*/
+    background-color: var(--color-bg-light);
+    color: var(--color-text-light);
+    /*Transición en colores de fondo y texto*/
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.dark body {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-dark);
+}
+
+img,
+svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
