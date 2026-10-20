@@ -43,21 +43,20 @@ onMounted(() => {
 </script>
 
 <template>
-    <div
-        class="inline-flex items-center gap-2 p-1 rounded-full border-2 border-transparent bg-origin-border [background-clip:padding-box,border-box] bg-[linear-gradient(var(--color-bg-light),var(--color-bg-light)),linear-gradient(to_right,var(--color-accent-green),var(--color-accent-blue))] dark:bg-[linear-gradient(var(--color-bg-dark),var(--color-bg-dark)),linear-gradient(to_right,var(--color-accent-green),var(--color-accent-blue))]">
+    <div class="inline-flex items-center gap-2 p-1 rounded-full border-2 border-transparent border-glow">
         <!-- Botón 1: Modo Oscuro 🌙 -->
-        <button type="button" @click="setTheme('dark')">
-            <img :src="currentMode === 'dark' ? moonGreen : (isAppDark ? moonDark : moonGrey)" alt="Modo Oscuro" />
+        <button class=" cursor-pointer" type="button" @click="setTheme('dark')">
+            <img :src="currentMode === 'dark' ? moonGreen : (isAppDark ? moonGrey : moonDark)" alt="Modo Oscuro" />
         </button>
 
         <!-- Botón 2: Modo Claro ☀️ -->
-        <button type="button" @click="setTheme('light')">
-            <img :src="currentMode === 'light' ? sunGreen : (isAppDark ? sunDark : sunGrey)" alt="Modo Claro" />
+        <button class=" cursor-pointer" type="button" @click="setTheme('light')">
+            <img :src="currentMode === 'light' ? sunGreen : (isAppDark ? sunGrey : sunDark)" alt="Modo Claro" />
         </button>
 
         <!-- Botón 3: Modo Sistema 🖥️ -->
-        <button type="button" @click="setTheme('system')">
-            <img :src="currentMode === 'system' ? systemGreen : (isAppDark ? systemDark : systemGrey)"
+        <button class=" cursor-pointer" type="button" @click="setTheme('system')">
+            <img :src="currentMode === 'system' ? systemGreen : (isAppDark ? systemGrey : systemDark)"
                 alt="Modo Sistema" />
         </button>
     </div>

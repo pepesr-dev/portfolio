@@ -15,6 +15,71 @@
     --color-accent-blue: #6088F2;
 }
 
+
+@utility border-glow {
+    border-width: 2px;
+    border-color: transparent;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    /* Estado por defecto (Modo Claro) */
+    background-image:
+        linear-gradient(var(--color-bg-light), var(--color-bg-light)),
+        linear-gradient(to right, var(--color-accent-green), var(--color-accent-blue));
+
+    /* Aprovechamos tu variante personalizada @custom-variant dark */
+    @variant dark {
+        background-image:
+            linear-gradient(var(--color-bg-dark), var(--color-bg-dark)),
+            linear-gradient(to right, var(--color-accent-green), var(--color-accent-blue));
+    }
+}
+
+@layer base {
+    h1 {
+        font-size: 4rem;
+        /* 64px */
+        line-height: 1.1;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 2.375rem;
+        /* 38px */
+        line-height: 1.2;
+
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        /* 24px */
+
+    }
+
+    h4 {
+        font-size: 1.25rem;
+        /* 20px */
+
+    }
+
+    p {
+        font-size: 1rem;
+        /* 16px */
+    }
+
+    small {
+        font-size: 0.75rem;
+        /* 12px */
+    }
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
 body {
     /*Estado por defecto*/
     background-color: var(--color-bg-light);
@@ -33,4 +98,18 @@ img,
 svg {
     width: 1.5rem;
     height: 1.5rem;
+}
+
+.text-display {
+    font-size: 6rem;
+    /* 96px */
+}
+
+.text-gradient {
+    /* Definimos el degradado usando directamente tus variables del tema */
+    background-image: linear-gradient(to right, var(--color-accent-green), var(--color-accent-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
