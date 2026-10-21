@@ -6,13 +6,13 @@ import DarkMode from './DarkMode.vue';
 <template>
 
     <header
-        class="flex items-center justify-center gap-8 w-full pl-4 pr-4 p-1.5 shadow-md dark:shadow-none sm:w-max sm:border sm:rounded-full border-glow">
+        class="fixed flex items-center justify-center gap-8 w-full pl-4 pr-4 p-1.5 shadow-md dark:shadow-none w-max border rounded-full border-glow">
         <!-- Menú de navegación centrado 🧭 -->
         <nav>
             <ul class="flex items-center gap-6">
-                <li><a class="hover:text-accent-green font-bold" href="#">Inicio</a></li>
-                <li><a class="hover:text-accent-green font-bold" href="#">Proyectos</a></li>
-                <li><a class="hover:text-accent-green font-bold" href="#">Sobre mí</a></li>
+                <li><a class="hover:text-accent-green font-bold" href="#home">Inicio</a></li>
+                <li><a class="hover:text-accent-green font-bold" href="#proyects">Proyectos</a></li>
+                <li><a class="hover:text-accent-green font-bold" href="#aboutMe">Sobre mí</a></li>
             </ul>
         </nav>
 

@@ -113,3 +113,7 @@ svg {
     background-clip: text;
     color: transparent;
 }
+
+.bg-gradient-box {
+    background-image: linear-gradient(to right, var(--color-accent-green), var(--color-accent-blue));
+}

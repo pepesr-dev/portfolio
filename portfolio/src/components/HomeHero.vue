@@ -10,13 +10,13 @@ import WorkStatus from './WorkStatus.vue';
 </script>
 <template>
 
-    <div class=" p-8 flex flex-col items-center justify-center w-fit mx-auto gap-4">
+    <div class="mt-15 p-8 flex flex-col items-center justify-center w-fit mx-auto gap-4">
         <img class=" min-w-[10rem] min-h-[10rem] object-cover rounded-full"
             src="../assets/icons/jose/jose-profileImg.png" alt="jose">
         <WorkStatus />
 
         <div class="p-8 text-center">
-            <h1 class="text-display text-gradient">José Serrano</h1>
+            <h1 id="home" class="text-display text-gradient">José Serrano</h1>
 
             <h3><span class="  font-bold text-gradient">Desarrollador Web Full-Stack.</span> Vivo en Jerez de la
                 frontera, Cádiz.</h3>
