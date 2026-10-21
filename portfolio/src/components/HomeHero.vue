@@ -10,7 +10,7 @@ import WorkStatus from './WorkStatus.vue';
 </script>
 <template>
 
-    <div class="mt-15 p-8 flex flex-col items-center justify-center w-fit mx-auto gap-4">
+    <div class="mt-15 p-8 flex flex-col items-center text-center justify-center w-full mx-auto gap-4">
         <img class=" min-w-[10rem] min-h-[10rem] object-cover rounded-full"
             src="../assets/icons/jose/jose-profileImg.png" alt="jose">
         <WorkStatus />
