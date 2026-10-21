@@ -8,9 +8,10 @@ import NavBar from '@/components/NavBar.vue';
 
 </script>
 <template>
-    <div class=" max-w-7xl m-auto">
+    <div class="px-4 max-w-7xl w-full m-auto">
+
         <header>
-            <div class=" mt-12.5 w-full flex justify-center">
+            <div class="mt-12.5 w-full flex justify-center">
                 <NavBar />
             </div>
 
@@ -19,14 +20,12 @@ import NavBar from '@/components/NavBar.vue';
 
         </header>
 
-        <main>
+        <main class="w-full">
             <AboutMeSection />
-
         </main>
 
     </div>
-    <footer>
-
+    <footer class="w-full text-center">
         <FooterCredits />
     </footer>
 </template>
