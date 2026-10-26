@@ -6,13 +6,14 @@ import LinkedInContact from './LinkedInContact.vue';
 import MailContact from './MailContact.vue';
 import WorkStatus from './WorkStatus.vue';
 
-
 </script>
 <template>
 
-    <div class="mt-15 p-8 flex flex-col items-center text-center justify-center w-full mx-auto gap-4">
-        <img class=" min-w-[10rem] min-h-[10rem] object-cover rounded-full"
-            src="../assets/icons/jose/jose-profileImg.png" alt="jose">
+    <section class="mt-15 p-8 flex flex-col items-center text-center justify-center w-full mx-auto gap-4">
+        <figure>
+            <img class=" min-w-40 min-h-40 object-cover rounded-full" src="../assets/icons/jose/jose-profileImg.png"
+                alt="jose">
+        </figure>
         <WorkStatus />
 
         <div class="p-8 text-center">
@@ -23,13 +24,16 @@ import WorkStatus from './WorkStatus.vue';
 
         </div>
         <div class="p-8 flex gap-2 flex-wrap justify-center">
+            <!--Mail-->
             <MailContact />
-            <LinkedInContact />
             <GitHubContact />
-            <BehanceContact />
+            <LinkedInContact />
             <DownloadCV />
+            <BehanceContact link="https://www.behance.net/pepesr" />
+
+
         </div>
-    </div>
+    </section>
 
 
 

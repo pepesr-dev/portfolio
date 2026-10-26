@@ -3,6 +3,7 @@ import AboutMeSection from '@/components/AboutMeSection.vue';
 import FooterCredits from '@/components/FooterCredits.vue';
 import HomeHero from '@/components/HomeHero.vue';
 import NavBar from '@/components/NavBar.vue';
+import ProyectsSection from '@/components/ProjectsSection.vue';
 
 
 
@@ -21,6 +22,7 @@ import NavBar from '@/components/NavBar.vue';
         </header>
 
         <main class="w-full">
+            <ProyectsSection />
             <AboutMeSection />
         </main>
 

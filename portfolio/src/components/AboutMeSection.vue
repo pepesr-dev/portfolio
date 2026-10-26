@@ -1,14 +1,14 @@
 <script setup>
 </script>
 <template>
-    <div class="flex flex-col  items-center gap-8 m-8">
+    <section class="flex flex-col  items-center gap-8 m-8">
         <h2 id="aboutMe" class=" font-bold">Sobre <span class=" text-gradient">mí</span></h2>
-        <div class="flex sm:flex-row flex-col gap-4 items-center">
-            <div class=" flex flex-col justify-center items-center min-h-50">
+        <article class="flex md:flex-row flex-col gap-4 items-center">
+            <figure class=" flex flex-col justify-center items-center min-h-50">
                 <img class="rounded-2xl  pl-10 pr-10  bg-gradient-box min-w-[24rem] min-h-54 object-cover"
                     src="../assets/icons/jose/jose.png" alt="jose img">
 
-            </div>
+            </figure>
             <div>
                 <h1 class="text-center sm:text-left"><span class="text-gradient">José Serrano </span>Web Developer <span
                         class="text-gradient">Full-Stack</span></h1>
@@ -32,6 +32,6 @@
                         resolución de <span class="font-bold text-accent-green">retos técnicos.</span></li>
                 </ul>
             </div>
-        </div>
-    </div>
+        </article>
+    </section>
 </template>
