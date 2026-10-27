@@ -26,9 +26,9 @@ import WorkStatus from './WorkStatus.vue';
         <div class="p-8 flex gap-2 flex-wrap justify-center">
             <!--Mail-->
             <MailContact />
-            <GitHubContact />
             <LinkedInContact />
             <DownloadCV />
+            <GitHubContact />
             <BehanceContact link="https://www.behance.net/pepesr" />
 
 

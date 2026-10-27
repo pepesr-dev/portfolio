@@ -10,7 +10,7 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
 
 <template>
     <!-- Contenedor principal con diseño responsivo e inversión de orden -->
-    <article class="flex flex-col md:flex-row items-center gap-8 p-6 md:p-8">
+    <article class="flex flex-col md:flex-row items-center gap-8 ">
 
 
         <figure>
@@ -56,7 +56,7 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
     </article>
 
     <!--REVERSE PROYECT-->
-    <article class="flex flex-col md:flex-row-reverse items-center gap-8 p-6 md:p-8">
+    <article class="flex flex-col md:flex-row-reverse items-center gap-8">
 
         <figure>
             <img class="border-glow  rounded-2xl min-w-100 min-h-50 md:min-w-120 md:min-h-60" :src="taskTrackerImg"
@@ -103,7 +103,7 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
 
 
 
-    <article class="flex flex-col md:flex-row items-center gap-8 p-6 md:p-8">
+    <article class="flex flex-col md:flex-row items-center gap-8 ">
 
 
         <figure>
