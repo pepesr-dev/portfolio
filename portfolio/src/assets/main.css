@@ -3,6 +3,8 @@
 /*Regla personalizada que seleciona todas las clases dark*/
 @custom-variant dark (&:where(.dark, .dark *));
 
+
+
 @theme {
     /*fondo*/
     --color-bg-light: #FFFFFF;
@@ -13,8 +15,33 @@
     /*acento*/
     --color-accent-green: #10B981;
     --color-accent-blue: #6088F2;
+
+    /*fuentes*/
+    --font-inter: 'Inter', sans-serif;
+    --font-instrument: 'Instrument Sans', sans-serif;
+
+    /*cursor*/
+    --cursor-mouse: url('../assets/icons/cursor/cursor-mouse.svg');
+    --cursor-hand: url('../assets/icons/cursor/cursor-hand.svg');
+    --cursor-text: url('../assets/icons/cursor/cursor-text.svg');
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url('@/assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    /* Soporta todo el rango de pesos por ser variable */
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Instrument Sans';
+    src: url('@/assets/fonts/Instrument_Sans/InstrumentSans-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
 
 @utility border-glow {
     border-width: 2px;
@@ -36,6 +63,14 @@
 }
 
 @layer base {
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: var(--font-instrument);
+    }
+
     h1 {
         font-size: 4rem;
         /* 64px */
@@ -75,17 +110,19 @@
 
 html {
     font-size: 16px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(--font-inter);
 
 
 }
 
 body {
+    cursor: var(--cursor-mouse) 2 2, default;
     /*Estado por defecto*/
     background-color: var(--color-bg-light);
     color: var(--color-text-light);
     /*Transición en colores de fondo y texto*/
     transition: background-color 0.3s, color 0.3s;
+
 
 }
 
@@ -134,4 +171,25 @@ svg {
 
 .bg-gradient-box {
     background-image: linear-gradient(to right, var(--color-accent-green), var(--color-accent-blue));
+}
+
+a,
+button,
+input[type="button"],
+input[type="submit"],
+label,
+select,
+[role="button"],
+.cursor-pointer {
+    cursor: var(--cursor-hand) 8 2, pointer;
+}
+
+/* 3. Cursor de texto (I-beam) para campos de entrada y texto escribible */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+[contenteditable="true"] {
+    cursor: var(--cursor-text) 12 12, text;
 }

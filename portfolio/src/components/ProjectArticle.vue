@@ -4,6 +4,7 @@ import CodeButtom from './CodeButtom.vue';
 import PreviewButton from './PreviewButton.vue';
 import taskListImg from '../assets/img/task-list.png';
 import iteraAppImg from '../assets/img/iteraApp.jpg';
+import taskTrackerImg from '../assets/img/taskTracker.png';
 
 </script>
 
@@ -13,7 +14,8 @@ import iteraAppImg from '../assets/img/iteraApp.jpg';
 
 
         <figure>
-            <img class="  border-glow  rounded-2xl min-w-120 min-h-60" :src="iteraAppImg" alt="itera img">
+            <img class="  border-glow  rounded-2xl min-w-100 min-h-50 md:min-w-120 md:min-h-60" :src="iteraAppImg"
+                alt="itera img">
 
         </figure>
 
@@ -25,7 +27,7 @@ import iteraAppImg from '../assets/img/iteraApp.jpg';
                     Buscador visual y red social
                 </h1>
             </div>
-            <div>
+            <div class=" flex flex-col gap-4">
 
                 <div class="flex flex-wrap gap-2 dark:text-dark mb-2">
 
@@ -54,11 +56,59 @@ import iteraAppImg from '../assets/img/iteraApp.jpg';
     </article>
 
     <!--REVERSE PROYECT-->
+    <article class="flex flex-col md:flex-row-reverse items-center gap-8 p-6 md:p-8">
+
+        <figure>
+            <img class="border-glow  rounded-2xl min-w-100 min-h-50 md:min-w-120 md:min-h-60" :src="taskTrackerImg"
+                alt="taskList img">
+
+        </figure>
+
+
+        <div class="w-full md:w-1/2 flex flex-col gap-4 md:gap-10 text-left">
+
+            <div>
+                <h3 class="font-bold dark:text-dark">Task Tracker - CLI</h3>
+                <h1 class="  font-bold dark:text-gradient">
+                    Gestor de tareas en línea de comandos
+                </h1>
+            </div>
+            <div class=" flex flex-col gap-4">
+
+                <div class="flex flex-wrap gap-2 dark:text-dark mb-2">
+
+
+                    <p class="p-1 pr-2 pl-2 font-bold  bg-accent-green text-white rounded-full">#Jest</p>
+                    <p class="p-1 pr-2 pl-2 font-bold  bg-accent-green text-white rounded-full">#TypeScript</p>
+
+                </div>
+
+                <p class="dark-text-dark">
+                    Herramienta de administración de tareas construida siguiendo los requisitos de readmap.sh Contiene
+                    pruebas unitarias.
+                </p>
+                <div class=" pt-2 flex gap-2 flex-wrap ">
+                    <PreviewButton />
+                    <CodeButtom />
+                    <BehanceContact
+                        link="https://www.behance.net/gallery/256949487/Portfolio-web-Guia-de-estilos/modules/1500391247" />
+                </div>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+
+
     <article class="flex flex-col md:flex-row items-center gap-8 p-6 md:p-8">
 
 
         <figure>
-            <img class="  border-glow  rounded-2xl min-w-120 min-h-60" :src="taskListImg" alt="taskList img">
+            <img class="border-glow  rounded-2xl min-w-100 min-h-50 md:min-w-120 md:min-h-60" :src="taskListImg"
+                alt="taskList img">
 
         </figure>
 
@@ -70,7 +120,7 @@ import iteraAppImg from '../assets/img/iteraApp.jpg';
                     Gestor web de tareas
                 </h1>
             </div>
-            <div>
+            <div class=" flex flex-col gap-4">
 
                 <div class="flex flex-wrap gap-2 dark:text-dark mb-2">
 

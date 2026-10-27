@@ -9,7 +9,7 @@ import ProyectsSection from '@/components/ProjectsSection.vue';
 
 </script>
 <template>
-    <div class="px-4 max-w-7xl w-full m-auto">
+    <div class="px-8 max-w-300 w-full m-auto">
 
         <header>
             <div class="mt-12.5 w-full flex justify-center">

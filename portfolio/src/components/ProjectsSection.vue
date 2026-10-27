@@ -6,7 +6,7 @@ import ProjectArticle from './ProjectArticle.vue';
 
 <template>
     <section class="flex flex-col items-center gap-8 m-8 w-full max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold text-center">
+        <h2 id="proyects" class="text-3xl font-bold text-center">
             <span class="font-bold text-gradient">Proyectos</span> realizados
         </h2>
 
