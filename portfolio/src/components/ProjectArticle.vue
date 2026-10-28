@@ -42,8 +42,10 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
                     gestión de las mismas.
                 </p>
                 <div class=" pt-2 flex gap-2 flex-wrap ">
-                    <PreviewButton />
-                    <CodeButtom />
+                    <!--
+                    <PreviewButton  />
+                -->
+                    <CodeButtom link="https://github.com/pepesr-dev/itera" />
 
                     <BehanceContact
                         link="https://www.behance.net/gallery/256949487/Portfolio-web-Guia-de-estilos/modules/1500391247" />
@@ -88,8 +90,8 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
                     pruebas unitarias.
                 </p>
                 <div class=" pt-2 flex gap-2 flex-wrap ">
-                    <PreviewButton />
-                    <CodeButtom />
+                    <!--<PreviewButton />-->
+                    <CodeButtom link="https://github.com/pepesr-dev/taskTracker" />
                     <BehanceContact
                         link="https://www.behance.net/gallery/256949487/Portfolio-web-Guia-de-estilos/modules/1500391247" />
                 </div>
@@ -138,8 +140,8 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
                     cuenta con una interfaz de usuario con diseño 100% propio.
                 </p>
                 <div class=" pt-2 flex gap-2 flex-wrap ">
-                    <PreviewButton />
-                    <CodeButtom />
+                    <PreviewButton link="https://tasklist-rwqa.onrender.com/index.php" />
+                    <CodeButtom link="https://github.com/pepesr-dev/taskList" />
                     <BehanceContact
                         link="https://www.behance.net/gallery/256949487/Portfolio-web-Guia-de-estilos/modules/1500391247" />
                 </div>
