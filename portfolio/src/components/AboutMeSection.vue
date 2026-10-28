@@ -1,7 +1,7 @@
 <script setup>
 </script>
 <template>
-    <section class="flex flex-col  items-center gap-8 m-8">
+    <section class="flex flex-col  items-center gap-8 pt-4 pb-4">
         <h2 id="aboutMe" class=" font-bold">Sobre <span class=" text-gradient">mí</span></h2>
         <article class="flex md:flex-row flex-col gap-4 items-center">
             <figure class=" flex flex-col justify-center items-center min-h-50">

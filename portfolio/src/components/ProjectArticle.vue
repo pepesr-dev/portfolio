@@ -9,8 +9,7 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
 </script>
 
 <template>
-    <!-- Contenedor principal con diseño responsivo e inversión de orden -->
-    <article class="flex flex-col md:flex-row items-center gap-8 ">
+    <article class="flex flex-col md:flex-row items-center gap-4 ">
 
 
         <figure>
@@ -45,6 +44,7 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
                 <div class=" pt-2 flex gap-2 flex-wrap ">
                     <PreviewButton />
                     <CodeButtom />
+
                     <BehanceContact
                         link="https://www.behance.net/gallery/256949487/Portfolio-web-Guia-de-estilos/modules/1500391247" />
                 </div>
@@ -55,8 +55,8 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
 
     </article>
 
-    <!--REVERSE PROYECT-->
-    <article class="flex flex-col md:flex-row-reverse items-center gap-8">
+    <!--Invertido-->
+    <article class="flex flex-col md:flex-row-reverse items-center gap-4">
 
         <figure>
             <img class="border-glow  rounded-2xl min-w-100 min-h-50 md:min-w-120 md:min-h-60" :src="taskTrackerImg"
@@ -103,7 +103,7 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
 
 
 
-    <article class="flex flex-col md:flex-row items-center gap-8 ">
+    <article class="flex flex-col md:flex-row items-center gap-4 ">
 
 
         <figure>

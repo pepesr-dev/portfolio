@@ -9,25 +9,23 @@ import ProyectsSection from '@/components/ProjectsSection.vue';
 
 </script>
 <template>
-    <div class="px-4 max-w-300 w-full m-auto">
+    <div class="w-full ">
+        <div class="pl-2 pr-2 max-w-300 w-full m-auto">
 
-        <header>
-            <div class="mt-12.5 w-full flex justify-center">
+
+            <header class="pt-12.5 w-full flex justify-center ">
                 <NavBar />
-            </div>
+            </header>
 
-            <HomeHero />
+            <main class="w-full pl-2 pr-2 ">
+                <HomeHero />
+                <ProyectsSection />
+                <AboutMeSection />
+            </main>
 
-
-        </header>
-
-        <main class="w-full">
-            <ProyectsSection />
-            <AboutMeSection />
-        </main>
-
+        </div>
+        <footer class="w-full text-center">
+            <FooterCredits />
+        </footer>
     </div>
-    <footer class="w-full text-center">
-        <FooterCredits />
-    </footer>
 </template>

@@ -5,27 +5,6 @@
 
 
 
-@theme {
-    /*fondo*/
-    --color-bg-light: #FFFFFF;
-    --color-bg-dark: #0D1B2A;
-    /*texto*/
-    --color-text-light: #1D3646;
-    --color-text-dark: #94A3B8;
-    /*acento*/
-    --color-accent-green: #10B981;
-    --color-accent-blue: #6088F2;
-
-    /*fuentes*/
-    --font-inter: 'Inter', sans-serif;
-    --font-instrument: 'Instrument Sans', sans-serif;
-
-    /*cursor*/
-    --cursor-mouse: url('../assets/icons/cursor/cursor-mouse.svg');
-    --cursor-hand: url('../assets/icons/cursor/cursor-hand.svg');
-    --cursor-text: url('../assets/icons/cursor/cursor-text.svg');
-}
-
 @font-face {
     font-family: 'Inter';
     src: url('@/assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
@@ -62,6 +41,29 @@
     }
 }
 
+
+@theme {
+    /*fondo*/
+    --color-bg-light: #FFFFFF;
+    --color-bg-dark: #0D1B2A;
+    /*texto*/
+    --color-text-light: #1D3646;
+    --color-text-dark: #94A3B8;
+    /*acento*/
+    --color-accent-green: #10B981;
+    --color-accent-blue: #6088F2;
+
+    /*fuentes*/
+    --font-inter: 'Inter', sans-serif;
+    --font-instrument: 'Instrument Sans', sans-serif;
+
+    /*cursor*/
+    --cursor-mouse: url('../assets/icons/cursor/cursor-mouse.svg');
+    --cursor-hand: url('../assets/icons/cursor/cursor-hand.svg');
+    --cursor-text: url('../assets/icons/cursor/cursor-text.svg');
+}
+
+
 @layer base {
 
     h1,
@@ -73,45 +75,46 @@
 
     h1 {
         font-size: 4rem;
-        /* 64px */
         line-height: 1.1;
         font-weight: bold;
     }
 
     h2 {
         font-size: 2.375rem;
-        /* 38px */
+
         line-height: 1.2;
 
     }
 
     h3 {
         font-size: 1.5rem;
-        /* 24px */
 
     }
 
     h4 {
         font-size: 1.25rem;
-        /* 20px */
+
 
     }
 
     p {
         font-size: 1rem;
-        /* 16px */
+
     }
 
     small {
         font-size: 0.75rem;
-        /* 12px */
+
     }
+}
+
+* {
+    box-sizing: border-box;
 }
 
 html {
     font-size: 16px;
     font-family: var(--font-inter);
-
 
 }
 
@@ -120,12 +123,60 @@ body {
     /*Estado por defecto*/
     background-color: var(--color-bg-light);
     color: var(--color-text-light);
-    /*Transición en colores de fondo y texto*/
     transition: background-color 0.3s, color 0.3s;
-
 
 }
 
+
+img,
+svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/*Texto principal */
+.text-display {
+    font-size: 6rem;
+}
+
+/*Degradados*/
+.text-gradient {
+
+    background-image: linear-gradient(to right, var(--color-accent-green), var(--color-accent-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.bg-gradient-box {
+    background-image: linear-gradient(to right, var(--color-accent-green), var(--color-accent-blue));
+}
+
+
+/*Cursores*/
+a,
+button,
+input[type="button"],
+input[type="submit"],
+label,
+select,
+[role="button"],
+.cursor-pointer {
+    cursor: var(--cursor-hand) 8 2, pointer;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+[contenteditable="true"] {
+    cursor: var(--cursor-text) 12 12, text;
+}
+
+/*Aplica el modo oscuro*/
 .dark body {
     background-color: var(--color-bg-dark);
     color: var(--color-text-dark);
@@ -147,49 +198,4 @@ body {
     background-clip: text;
     color: transparent;
     font-weight: bold;
-}
-
-img,
-svg {
-    width: 1.5rem;
-    height: 1.5rem;
-}
-
-.text-display {
-    font-size: 6rem;
-    /* 96px */
-}
-
-.text-gradient {
-    /* Definimos el degradado usando directamente tus variables del tema */
-    background-image: linear-gradient(to right, var(--color-accent-green), var(--color-accent-blue));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-}
-
-.bg-gradient-box {
-    background-image: linear-gradient(to right, var(--color-accent-green), var(--color-accent-blue));
-}
-
-a,
-button,
-input[type="button"],
-input[type="submit"],
-label,
-select,
-[role="button"],
-.cursor-pointer {
-    cursor: var(--cursor-hand) 8 2, pointer;
-}
-
-/* 3. Cursor de texto (I-beam) para campos de entrada y texto escribible */
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
-textarea,
-[contenteditable="true"] {
-    cursor: var(--cursor-text) 12 12, text;
 }
