@@ -36,7 +36,7 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
 
                 </div>
 
-                <p class="dark-text-dark">
+                <p class="dark:text-text-dark">
                     Aplicación web full-stack que replica la lógica y el diseño de Pinterest.
                     Presenta la colección de imágenes publicadas por los usuarios en formato mampostería y permite la
                     gestión de las mismas.
@@ -85,7 +85,7 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
 
                 </div>
 
-                <p class="dark-text-dark">
+                <p class="dark:text-text-dark">
                     Herramienta de administración de tareas construida siguiendo los requisitos de readmap.sh Contiene
                     pruebas unitarias.
                 </p>
@@ -135,7 +135,7 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
 
                 </div>
 
-                <p class="dark-text-dark">
+                <p class="dark:text-text-dark">
                     App web desarrollada con PHP nativo y conectada a una base de datos relacional MySql. Este proyecto
                     cuenta con una interfaz de usuario con diseño 100% propio.
                 </p>
