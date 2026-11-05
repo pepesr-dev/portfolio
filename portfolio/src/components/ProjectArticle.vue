@@ -9,7 +9,7 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
 </script>
 
 <template>
-    <article class="flex flex-col md:flex-row items-center gap-4 ">
+    <article class="flex flex-col md:flex-row items-center gap-4 justify-between">
 
 
         <figure>
@@ -20,19 +20,24 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
 
         <div class="w-full md:w-1/2 flex flex-col gap-4 md:gap-10 text-left">
 
-            <div>
+            <hgroup>
                 <h3 class="font-bold dark:text-dark">Itera</h3>
-                <h1 class="  font-bold dark:text-gradient">
-                    Buscador visual y red social
+                <h1 class="font-bold dark:text-gradient">
+                    <span class="text-gradient">Buscador visual</span> y red social
                 </h1>
-            </div>
+            </hgroup>
             <div class=" flex flex-col gap-4">
 
                 <div class="flex flex-wrap gap-2 dark:text-dark mb-2">
 
-                    <p class="p-1 pr-2 pl-2 font-bold  bg-accent-green text-white rounded-full">#PHP</p>
+                    <p class="p-1 pr-2 pl-2 font-bold  bg-accent-green text-white rounded-full">#Figma</p>
+                    <p class="p-1 pr-2 pl-2 font-bold  bg-accent-green text-white rounded-full">#Docker</p>
+                    <p class="p-1 pr-2 pl-2 font-bold  bg-accent-green text-white rounded-full">#MySql</p>
+                    <p class="p-1 pr-2 pl-2 font-bold  bg-accent-green text-white rounded-full">#SQL</p>
                     <p class="p-1 pr-2 pl-2 font-bold  bg-accent-green text-white rounded-full">#Vue.js</p>
                     <p class="p-1 pr-2 pl-2 font-bold  bg-accent-green text-white rounded-full">#Laravel</p>
+                    <p class="p-1 pr-2 pl-2 font-bold  bg-accent-green text-white rounded-full">#HTML</p>
+                    <p class="p-1 pr-2 pl-2 font-bold  bg-accent-green text-white rounded-full">#CSS</p>
 
                 </div>
 
@@ -42,9 +47,7 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
                     gestión de las mismas.
                 </p>
                 <div class=" pt-2 flex gap-2 flex-wrap ">
-                    <!--
-                    <PreviewButton  />
-                -->
+                    <PreviewButton link="https://tasklist-rwqa.onrender.com/index.php" />
                     <CodeButtom link="https://github.com/pepesr-dev/itera" />
 
                     <BehanceContact
@@ -58,11 +61,11 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
     </article>
 
     <!--Invertido-->
-    <article class="flex flex-col md:flex-row-reverse items-center gap-4">
+    <article class="flex flex-col md:flex-row-reverse items-center gap-4 justify-between">
 
         <figure>
             <img class="border-glow  rounded-2xl min-w-100 min-h-50 md:min-w-120 md:min-h-60" :src="taskTrackerImg"
-                alt="taskList img">
+                alt="taskTracker">
 
         </figure>
 
@@ -72,7 +75,7 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
             <div>
                 <h3 class="font-bold dark:text-dark">Task Tracker - CLI</h3>
                 <h1 class="  font-bold dark:text-gradient">
-                    Gestor de tareas en línea de comandos
+                    <span class="text-gradient">Gestor de tareas</span> en línea de comandos
                 </h1>
             </div>
             <div class=" flex flex-col gap-4">
@@ -92,8 +95,10 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
                 <div class=" pt-2 flex gap-2 flex-wrap ">
                     <!--<PreviewButton />-->
                     <CodeButtom link="https://github.com/pepesr-dev/taskTracker" />
+                    <!--
                     <BehanceContact
                         link="https://www.behance.net/gallery/256949487/Portfolio-web-Guia-de-estilos/modules/1500391247" />
+                -->
                 </div>
 
             </div>
@@ -105,7 +110,7 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
 
 
 
-    <article class="flex flex-col md:flex-row items-center gap-4 ">
+    <article class="flex flex-col md:flex-row items-center gap-4 justify-between ">
 
 
         <figure>
@@ -119,7 +124,7 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
             <div>
                 <h3 class="font-bold dark:text-dark">TaskList</h3>
                 <h1 class="  font-bold dark:text-gradient">
-                    Gestor web de tareas
+                    <span class="text-gradient">Gestor web</span> de tareas
                 </h1>
             </div>
             <div class=" flex flex-col gap-4">
@@ -142,8 +147,10 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
                 <div class=" pt-2 flex gap-2 flex-wrap ">
                     <PreviewButton link="https://tasklist-rwqa.onrender.com/index.php" />
                     <CodeButtom link="https://github.com/pepesr-dev/taskList" />
+                    <!--
                     <BehanceContact
                         link="https://www.behance.net/gallery/256949487/Portfolio-web-Guia-de-estilos/modules/1500391247" />
+                -->
                 </div>
 
             </div>

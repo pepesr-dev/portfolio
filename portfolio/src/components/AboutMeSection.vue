@@ -2,7 +2,7 @@
 </script>
 <template>
     <section class="flex flex-col  items-center gap-8 pt-4 pb-4">
-        <h2 id="aboutMe" class=" font-bold">Sobre <span class=" text-gradient">mí</span></h2>
+        <h2 id="aboutMe" class=" font-bold dark:text-gradient"><span class="text-gradient">Sobre</span> mí</h2>
         <article class="flex md:flex-row flex-col gap-4 items-center">
             <figure class=" flex flex-col justify-center items-center min-h-50">
                 <img class="rounded-2xl  pl-10 pr-10  bg-gradient-box min-w-[24rem] min-h-54 object-cover"
@@ -10,8 +10,8 @@
 
             </figure>
             <div>
-                <h1 class="text-center sm:text-left"><span class="text-gradient">José Serrano </span>Web Developer <span
-                        class="text-gradient">Full-Stack</span></h1>
+                <h1 class="text-center sm:text-left dark:text-gradient"><span class="text-gradient">José Serrano
+                    </span>Web Developer <span class="text-gradient">Full-Stack</span></h1>
                 <p>Soy José Serrano, Desarrollador Web Full-Stack <span class="font-bold text-accent-green">formado en
                         IES
                         Aguadulce</span> (Técnico Superior en DAW).
