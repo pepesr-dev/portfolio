@@ -47,7 +47,7 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
                     gestión de las mismas.
                 </p>
                 <div class=" pt-2 flex gap-2 flex-wrap ">
-                    <PreviewButton link="https://tasklist-rwqa.onrender.com/index.php" />
+                    <PreviewButton link="https://itera-7mhg.onrender.com/home" />
                     <CodeButtom link="https://github.com/pepesr-dev/itera" />
 
                     <BehanceContact
