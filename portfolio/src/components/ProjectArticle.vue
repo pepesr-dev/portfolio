@@ -51,7 +51,7 @@ import taskTrackerImg from '../assets/img/taskTracker.png';
                     <CodeButtom link="https://github.com/pepesr-dev/itera" />
 
                     <BehanceContact
-                        link="https://www.behance.net/gallery/256949487/Portfolio-web-Guia-de-estilos/modules/1500391247" />
+                        link="https://www.behance.net/gallery/258345781/Itera-Guia-de-diseno-web/modules/1510719371" />
                 </div>
 
             </div>
